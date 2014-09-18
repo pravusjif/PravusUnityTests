@@ -1,0 +1,3 @@
+* layer masks en unity: para los limites del nivel
+* efectos de sonido, layers de sonido
+* efectos visuales: flashing, glowing, particulas
