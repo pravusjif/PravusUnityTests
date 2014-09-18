@@ -5,19 +5,12 @@ public class NetworkManager : MonoBehaviour {
 	public string gameID = "Pravs_Multiplayer_Test";
 	public GameObject playerPrefab = null;
 	public Vector3 spawnPosition = Vector3.zero;
-	float buttonXPos;
-	float buttonYPos;
-	float buttonWidth;
-	float buttonHeight;
+	float buttonXPos = Screen.width * 0.05f;
+	float buttonYPos = Screen.height * 0.05f;
+	float buttonWidth = Screen.width * 0.1f;
+	float buttonHeight = Screen.width * 0.03f;
 	HostData[] hosts = null;
 	bool refreshing = false;
-
-	void Start(){
-		buttonXPos = Screen.width * 0.05f;
-		buttonYPos = Screen.height * 0.05f;
-		buttonWidth = Screen.width * 0.1f;
-		buttonHeight = Screen.width * 0.03f;
-	}
 
 	void Update(){
 		if(refreshing){
