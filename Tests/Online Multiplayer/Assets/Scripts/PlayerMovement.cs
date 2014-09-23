@@ -3,16 +3,14 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	public int movementSpeed = 5;
+	public int mouseMovementSpeed = 5;
 	public int rotationSpeed = 50;
-	public int jumpPower = 5;
-	public float jumpMaxHeight = 15;
-	public float gravity = 5;
+	public int jumpPower = 7;
 	CharacterController controller;
 	Vector3 auxiliarVector;
-	bool jumping = false;
-	float beforeJumpYPos;
 	Vector3 auxiliarEulerAngles;
 	Quaternion auxiliarRotation;
+	public Vector3 moveTargetPosition;
 
 	void Awake(){
 		controller = GetComponent<CharacterController>();
@@ -40,24 +38,32 @@ public class PlayerMovement : MonoBehaviour {
 			auxiliarVector += transform.forward * (Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime);
 		}
 
-		if(!jumping){
-			if(Input.GetKeyDown(KeyCode.Space)){
-				jumping = true;
-				beforeJumpYPos = auxiliarVector.y;
-
-				auxiliarVector.y += jumpPower * Time.deltaTime;
-			}
-		}
-		else {
-			auxiliarVector.y += jumpPower * Time.deltaTime;
-
-			if(Mathf.Abs(auxiliarVector.y - beforeJumpYPos) > jumpMaxHeight){
-				//auxiliarVector.y = beforeJumpYPos + jumpMaxHeight;
-
-				jumping = false;
-			}
+		if(Input.GetKeyDown(KeyCode.Space)){
+			rigidbody.AddForce(Vector3.up * jumpPower, ForceMode.VelocityChange);
 		}
 		
 		transform.position = auxiliarVector;
+
+		if(Input.GetMouseButtonDown(0)){
+			GetMoveTargetPosition();
+			MoveTowardsTargetPosition();
+		}
+	}
+
+	void GetMoveTargetPosition(){
+		auxiliarVector = Input.mousePosition;
+		auxiliarVector.z = 20;
+
+		moveTargetPosition = Camera.main.ScreenToWorldPoint(auxiliarVector);
+	}
+
+	void MoveTowardsTargetPosition(){
+		rigidbody.velocity = Vector3.zero;
+
+		Vector3 forceTowardsPosition = moveTargetPosition - transform.position;
+		//forceTowardsPosition = forceTowardsPosition.normalized *  mouseMovementSpeed;
+		forceTowardsPosition.y = 0;
+
+		rigidbody.AddForce(forceTowardsPosition, ForceMode.VelocityChange);
 	}
 }
