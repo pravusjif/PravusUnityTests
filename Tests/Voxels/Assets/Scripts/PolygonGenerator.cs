@@ -58,14 +58,35 @@ public class PolygonGenerator : MonoBehaviour {
 		colliderVertices.Add(new Vector3(x + 1, y, 1));
 		colliderVertices.Add(new Vector3(x + 1, y, 0));
 		colliderVertices.Add(new Vector3(x, y, 0));
+
+		AddColliderTriangles();
+		colliderCount++;
+
+		// Bottom Face Collision
+		colliderVertices.Add(new Vector3(x, y - 1, 0));
+		colliderVertices.Add(new Vector3(x + 1, y - 1, 0));
+		colliderVertices.Add(new Vector3(x + 1, y - 1, 1));
+		colliderVertices.Add(new Vector3(x, y - 1, 1));
 		
-		colliderTriangles.Add(colliderCount*4);
-		colliderTriangles.Add((colliderCount*4) + 1);
-		colliderTriangles.Add((colliderCount*4) + 3);
-		colliderTriangles.Add((colliderCount*4) + 1);
-		colliderTriangles.Add((colliderCount*4) + 2);
-		colliderTriangles.Add((colliderCount*4) + 3);
+		AddColliderTriangles();
+		colliderCount++;
 		
+		// Left Face Collision
+		colliderVertices.Add(new Vector3(x, y - 1, 1));
+		colliderVertices.Add(new Vector3(x, y, 1));
+		colliderVertices.Add(new Vector3(x, y, 0));
+		colliderVertices.Add(new Vector3(x, y - 1, 0));
+		
+		AddColliderTriangles();
+		colliderCount++;
+		
+		// right Face Collision
+		colliderVertices.Add(new Vector3(x + 1, y, 1));
+		colliderVertices.Add(new Vector3(x + 1, y - 1, 1));
+		colliderVertices.Add(new Vector3(x + 1, y - 1, 0));
+		colliderVertices.Add(new Vector3(x + 1, y, 0));
+		
+		AddColliderTriangles();
 		colliderCount++;
 	}
 
@@ -95,6 +116,15 @@ public class PolygonGenerator : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	void AddColliderTriangles(){
+		colliderTriangles.Add(colliderCount*4);
+		colliderTriangles.Add((colliderCount*4) + 1);
+		colliderTriangles.Add((colliderCount*4) + 3);
+		colliderTriangles.Add((colliderCount*4) + 1);
+		colliderTriangles.Add((colliderCount*4) + 2);
+		colliderTriangles.Add((colliderCount*4) + 3);
 	}
 
 	void UpdateMesh(){
