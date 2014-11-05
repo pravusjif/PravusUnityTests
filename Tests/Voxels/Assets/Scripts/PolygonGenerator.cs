@@ -54,40 +54,48 @@ public class PolygonGenerator : MonoBehaviour {
 
 	void GenerateCollider(int x, int y){
 		// Top Face Collision
-		colliderVertices.Add(new Vector3(x, y, 1));
-		colliderVertices.Add(new Vector3(x + 1, y, 1));
-		colliderVertices.Add(new Vector3(x + 1, y, 0));
-		colliderVertices.Add(new Vector3(x, y, 0));
+		if(Block(x, y + 1) == 0){
+			colliderVertices.Add(new Vector3(x, y, 1));
+			colliderVertices.Add(new Vector3(x + 1, y, 1));
+			colliderVertices.Add(new Vector3(x + 1, y, 0));
+			colliderVertices.Add(new Vector3(x, y, 0));
 
-		AddColliderTriangles();
-		colliderCount++;
+			AddColliderTriangles();
+			colliderCount++;
+		}
 
 		// Bottom Face Collision
-		colliderVertices.Add(new Vector3(x, y - 1, 0));
-		colliderVertices.Add(new Vector3(x + 1, y - 1, 0));
-		colliderVertices.Add(new Vector3(x + 1, y - 1, 1));
-		colliderVertices.Add(new Vector3(x, y - 1, 1));
-		
-		AddColliderTriangles();
-		colliderCount++;
+		if(Block(x, y - 1) == 0){
+			colliderVertices.Add(new Vector3(x, y - 1, 0));
+			colliderVertices.Add(new Vector3(x + 1, y - 1, 0));
+			colliderVertices.Add(new Vector3(x + 1, y - 1, 1));
+			colliderVertices.Add(new Vector3(x, y - 1, 1));
+			
+			AddColliderTriangles();
+			colliderCount++;
+		}
 		
 		// Left Face Collision
-		colliderVertices.Add(new Vector3(x, y - 1, 1));
-		colliderVertices.Add(new Vector3(x, y, 1));
-		colliderVertices.Add(new Vector3(x, y, 0));
-		colliderVertices.Add(new Vector3(x, y - 1, 0));
-		
-		AddColliderTriangles();
-		colliderCount++;
+		if(Block(x - 1, y) == 0){
+			colliderVertices.Add(new Vector3(x, y - 1, 1));
+			colliderVertices.Add(new Vector3(x, y, 1));
+			colliderVertices.Add(new Vector3(x, y, 0));
+			colliderVertices.Add(new Vector3(x, y - 1, 0));
+			
+			AddColliderTriangles();
+			colliderCount++;
+		}
 		
 		// right Face Collision
-		colliderVertices.Add(new Vector3(x + 1, y, 1));
-		colliderVertices.Add(new Vector3(x + 1, y - 1, 1));
-		colliderVertices.Add(new Vector3(x + 1, y - 1, 0));
-		colliderVertices.Add(new Vector3(x + 1, y, 0));
-		
-		AddColliderTriangles();
-		colliderCount++;
+		if(Block(x + 1, y) == 0){
+			colliderVertices.Add(new Vector3(x + 1, y, 1));
+			colliderVertices.Add(new Vector3(x + 1, y - 1, 1));
+			colliderVertices.Add(new Vector3(x + 1, y - 1, 0));
+			colliderVertices.Add(new Vector3(x + 1, y, 0));
+			
+			AddColliderTriangles();
+			colliderCount++;
+		}
 	}
 
 	void GenerateTerrain(){
@@ -116,6 +124,13 @@ public class PolygonGenerator : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	byte Block(int x, int y){
+		if(x == -1 || x == blocks.GetLength(0) || y == -1 || y == blocks.GetLength(1))
+			return (byte)0;
+
+		return blocks[x, y];
 	}
 
 	void AddColliderTriangles(){
