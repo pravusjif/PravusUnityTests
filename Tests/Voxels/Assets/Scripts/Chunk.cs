@@ -124,7 +124,11 @@ public class Chunk : MonoBehaviour {
 		mesh.triangles = newTriangles.ToArray();
 		mesh.Optimize ();
 		mesh.RecalculateNormals ();
-		
+
+		// Mesh collider
+		meshCollider.sharedMesh=null;
+		meshCollider.sharedMesh=mesh;
+
 		newVertices.Clear();
 		newUV.Clear();
 		newTriangles.Clear();
