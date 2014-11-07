@@ -99,14 +99,34 @@ public class PolygonGenerator : MonoBehaviour {
 	}
 
 	void GenerateTerrain(){
-		blocks = new byte[10, 10];
+		blocks = new byte[96, 128];
 
 		for(int px = 0; px < blocks.GetLength(0); px++){
+			int stone = Noise(px, 0, 80, 15, 1);
+
+			stone += Noise(px, 0, 50, 30, 1);
+			stone += Noise(px, 0, 10, 10, 1);
+			stone += 75;
+
+			int dirt = Noise (px, 0, 100, 35, 1);
+			dirt += Noise (px, 0, 50, 30, 1);
+			dirt += 75;
+
 			for(int py = 0; py < blocks.GetLength(1); py++){
-				if(py == 5)
-					blocks[px, py] = 2;
-				else if(py < 5)
+				if(py < stone){
 					blocks[px, py] = 1;
+
+					// for some random dirt spots
+					if(Noise(px, py, 12, 16, 1) > 10)
+						blocks[px, py] = 2;
+
+					// for some random cave/empty spots
+					if(Noise(px, py*2, 16, 14, 1) > 10)
+						blocks[px, py] = 0;
+				}
+				else if(py < dirt){
+					blocks[px, py] = 2;
+				}
 			}
 		}
 	}
@@ -131,6 +151,10 @@ public class PolygonGenerator : MonoBehaviour {
 			return (byte)0;
 
 		return blocks[x, y];
+	}
+
+	int Noise(int x, int y, float scale, float magnitude, float exp){
+		return (int)(Mathf.Pow((Mathf.PerlinNoise(x/scale, y/scale) * magnitude), exp));
 	}
 
 	void AddColliderTriangles(){
