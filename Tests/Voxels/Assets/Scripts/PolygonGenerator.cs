@@ -9,6 +9,7 @@ public class PolygonGenerator : MonoBehaviour {
 	public List<Vector3> colliderVertices = new List<Vector3>();
 	public List<int> colliderTriangles = new List<int>();
 	public byte[,] blocks; // 0 = air; 1 = rock; 2 = grass
+	public bool update = false;
 
 	Mesh mesh;
 	float tileUnit = 0.25f;
@@ -27,9 +28,13 @@ public class PolygonGenerator : MonoBehaviour {
 		UpdateMesh();
 	}
 
-	/*void Update(){
-		UpdateMesh();
-	}*/
+	void Update(){
+		if(update){
+			BuildMesh();
+			UpdateMesh();
+			update = false;
+		}
+	}
 
 	void GenerateSquare(int x, int y, Vector2 texture){
 		newVertices.Add(new Vector3(x, y, 0));
