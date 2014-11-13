@@ -2,7 +2,14 @@
 using System.Collections;
 
 public class SampleProcessing : MonoBehaviour {
-	float amp;
+	public enum AudioSampleProcessingType{
+		amplitude,
+		decibels
+	}
+
+	public AudioSampleProcessingType type = AudioSampleProcessingType.amplitude;
+	public float amplitude;
+	public float db;
 	float[] smooth = new float[2];
 	
 	void Start () {
@@ -14,7 +21,11 @@ public class SampleProcessing : MonoBehaviour {
 	
 	void Update () {
 		//intensity of light, controlled by the amplitude of the sound
-		light.intensity = amp;
+
+		if(type == AudioSampleProcessingType.amplitude)
+			light.intensity = amplitude;
+		else if(type == AudioSampleProcessingType.decibels)
+			light.intensity = Mathf.Abs( db ) * 0.02f;
 	}
 	
 	void OnAudioFilterRead (float[] data, int channels)
@@ -22,10 +33,12 @@ public class SampleProcessing : MonoBehaviour {
 		for (var i = 0; i < data.Length; i = i + channels) {
 			// the absolute value of every sample
 			float absInput = Mathf.Abs(data[i]);
+			db = 20 * Mathf.Log(absInput);
+
 			// smoothening filter doing its thing
 			smooth[0] = ((0.01f * absInput) + (0.99f * smooth[1]));
 			// exaggerating the amplitude
-			amp = smooth[0]*7;
+			amplitude = smooth[0]*7;
 			// it is a recursive filter, so it is doing its recursive thing
 			smooth[1] = smooth[0];
 		}
