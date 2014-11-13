@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\VoxelShooter\UnityProject\Assets\Scripts\Controller\PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SampleProcessing.cs">
     <Files>
-      <File FileName="..\..\..\VoxelShooter\UnityProject\Assets\Scripts\Controller\PlayerController.cs" Line="77" Column="11" />
+      <File FileName="Assets\Scripts\SampleProcessing.cs" Line="6" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
