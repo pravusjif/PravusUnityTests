@@ -1,0 +1,60 @@
+Initialize engine version: 5.1.0f3 (ec70b008569d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 670M (ID=0x1213)
+    Vendor:   NVIDIA
+    VRAM:     2997 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.142 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Initialize engine version: 5.1.0f3 (ec70b008569d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 670M (ID=0x1213)
+    Vendor:   NVIDIA
+    VRAM:     2997 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.124 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1490 -> priority: 1 
+  Thread -> id: c54 -> priority: 1 
+<RI> Initialized touch support.
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2390 -> priority: 1 
+  Thread -> id: 1ca4 -> priority: 1 
