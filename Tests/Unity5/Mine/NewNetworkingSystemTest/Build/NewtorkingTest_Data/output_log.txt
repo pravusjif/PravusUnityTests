@@ -1,4 +1,4 @@
-Initialize engine version: 5.1.0f3 (ec70b008569d)
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -18,43 +18,25 @@ Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\B
 Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.142 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+- Completed reload, in  0.143 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-Initialize engine version: 5.1.0f3 (ec70b008569d)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 670M (ID=0x1213)
-    Vendor:   NVIDIA
-    VRAM:     2997 MB
-Begin MonoManager ReloadAssembly
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.124 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1490 -> priority: 1 
-  Thread -> id: c54 -> priority: 1 
 <RI> Initialized touch support.
 Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\GIT\UnityTests\Tests\Unity5\Mine\NewNetworkingSystemTest\Build\NewtorkingTest_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2390 -> priority: 1 
-  Thread -> id: 1ca4 -> priority: 1 
+  Thread -> id: 23f0 -> priority: 1 
+  Thread -> id: 1e80 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.197654 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 320.
+Total: 0.271547 ms (FindLiveObjects: 0.015822 ms CreateObjectMapping: 0.014539 ms MarkObjects: 0.224935 ms  DeleteObjects: 0.006842 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.604674 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 283.
+Total: 0.273685 ms (FindLiveObjects: 0.014539 ms CreateObjectMapping: 0.008552 ms MarkObjects: 0.242896 ms  DeleteObjects: 0.007697 ms)
+
