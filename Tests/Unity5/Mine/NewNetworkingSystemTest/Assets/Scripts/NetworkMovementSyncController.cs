@@ -27,7 +27,11 @@ public class NetworkMovementSyncController : NetworkBehaviour
         {
             CmdProvideValuesToServer(transform.position, transform.rotation);
         }
-        else if(transform.position != syncPlayerPosition || transform.rotation != syncPlayerRotation)
+    }
+
+    void Update()
+    {
+        if (!isLocalPlayer && (transform.position != syncPlayerPosition || transform.rotation != syncPlayerRotation))
         {
             LerpPosition();
             LerpRotation();
