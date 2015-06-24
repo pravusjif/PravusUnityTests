@@ -17,14 +17,15 @@ release/
 /*.tmproj
 /*.dwlt
 */Library/metadata/*
-Forbidden Kingdom/Library/cache/*
-Forbidden Kingdom/Library/metadata/*
-Forbidden Kingdom/Library/metadata/*
-Forbidden Kingdom/Library/previews/*
-Forbidden Kingdom/Library/ScriptAssemblies/*
+*/Library/cache/*
+*/Library/metadata/*
+*/Library/metadata/*
+*/Library/previews/*
+*/Library/ScriptAssemblies/*
 
 ProjectSettings/*
 Builds/*
+Build/*
 
 AnnotationManager
 assetDatabase3
