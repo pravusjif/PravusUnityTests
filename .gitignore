@@ -26,6 +26,8 @@ release/
 ProjectSettings/*
 Builds/*
 Build/*
+Build/WIN/*
+Build/MAC/*
 
 AnnotationManager
 assetDatabase3
