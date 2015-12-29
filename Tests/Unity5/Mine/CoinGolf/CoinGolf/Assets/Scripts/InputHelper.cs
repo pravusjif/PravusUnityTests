@@ -34,12 +34,8 @@ public class InputHelper : MonoBehaviour
              Vector2 newPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
              lastFakeTouch.deltaPosition = newPosition - lastFakeTouch.position;
 
-             //Debug.Log("DeltaPos: " + lastFakeTouch.deltaPosition.magnitude);
-             /*if (lastFakeTouch.deltaPosition.magnitude <= 0.05f)
-             {
+             if (lastFakeTouch.deltaPosition.magnitude <= 0.05f)
                 lastFakeTouch.phase = TouchPhase.Stationary;
-                Debug.Log("STATIONARY PHASE!");
-             }*/
 
              lastFakeTouch.position = newPosition;
              lastFakeTouch.fingerId = 0;
