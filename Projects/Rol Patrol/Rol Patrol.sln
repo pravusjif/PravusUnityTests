@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{A1E09401-97C5-2365-F465-872F4D1B8B50}") = "Rol Patrol", "Assembly-CSharp.csproj", "{DA42132A-741C-BDBC-4524-86B36EE879D6}"
 EndProject
+Project("{A1E09401-97C5-2365-F465-872F4D1B8B50}") = "Rol Patrol", "Assembly-CSharp-Editor.csproj", "{156B7732-B7FD-D2B4-2CB6-4BF001478CDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{DA42132A-741C-BDBC-4524-86B36EE879D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA42132A-741C-BDBC-4524-86B36EE879D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA42132A-741C-BDBC-4524-86B36EE879D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156B7732-B7FD-D2B4-2CB6-4BF001478CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156B7732-B7FD-D2B4-2CB6-4BF001478CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156B7732-B7FD-D2B4-2CB6-4BF001478CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156B7732-B7FD-D2B4-2CB6-4BF001478CDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
