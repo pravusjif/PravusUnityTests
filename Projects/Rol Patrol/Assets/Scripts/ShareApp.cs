@@ -10,7 +10,7 @@ public class ShareApp : MonoBehaviour
     {
         //execute the below lines if being run on a Android device
     #if UNITY_ANDROID
-        body = "Faltan " + RolCountdownController.daysRemaining + " días,  " + RolCountdownController.hoursRemaining + " horas y " + RolCountdownController.minutesRemaining + " minutos para las próxima roleada!";
+        body = "Faltan " + RolCountdownController.daysRemaining + " días, " + RolCountdownController.hoursRemaining + " horas y " + RolCountdownController.minutesRemaining + " minutos para las próxima roleada!";
 
         //Refernece of AndroidJavaClass class for intent
         AndroidJavaClass intentClass = new AndroidJavaClass ("android.content.Intent");
