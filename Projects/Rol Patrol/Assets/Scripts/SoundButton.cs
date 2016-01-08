@@ -16,8 +16,8 @@ public class SoundButton : SpriteButton {
 	protected override void OnMouseDown(){
 		base.OnMouseDown();
 
-		if(audio){
-			audio.Play();
+		if(GetComponent<AudioSource>()){
+			GetComponent<AudioSource>().Play();
 		}
 	}
 }

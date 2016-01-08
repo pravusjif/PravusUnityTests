@@ -10,7 +10,7 @@ public class ScrollableBG : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		mat = renderer.sharedMaterial;
+		mat = GetComponent<Renderer>().sharedMaterial;
 	}
 	
 	// Update is called once per frame

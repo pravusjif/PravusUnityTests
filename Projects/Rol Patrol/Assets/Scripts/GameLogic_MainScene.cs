@@ -25,10 +25,10 @@ public class GameLogic_MainScene : GameLogic {
 
 		if(Input.touchCount > 0){
 			foreach(Touch tch in Input.touches){
-				if(maxiButton.collider2D.OverlapPoint(Camera.main.ScreenToWorldPoint(tch.position))){
+				if(maxiButton.GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(tch.position))){
 					maxiButtonTouched = true;
 				}
-				else if(ushiButton.collider2D.OverlapPoint(Camera.main.ScreenToWorldPoint(tch.position))){
+				else if(ushiButton.GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(tch.position))){
 					ushiButtonTouched = true;
 				}
 			}
@@ -36,8 +36,8 @@ public class GameLogic_MainScene : GameLogic {
 
 		if(maxiButtonTouched && ushiButtonTouched){
 			// play scream sound
-			if(audio)
-				audio.Play();
+			if(GetComponent<AudioSource>())
+				GetComponent<AudioSource>().Play();
 
 			// load bonus level
 			Application.LoadLevel("BonusLevel");

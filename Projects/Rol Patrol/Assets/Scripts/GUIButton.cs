@@ -48,7 +48,7 @@ public class GUIButton : MonoBehaviour {
 						
 					
 					if(animationObject && animationName != "")
-						animationObject.animation.Play(animationName);
+						animationObject.GetComponent<Animation>().Play(animationName);
 				}
 				else {
 					if(onClickTexture)
@@ -63,8 +63,8 @@ public class GUIButton : MonoBehaviour {
 	}
 
 	protected virtual void OnMouseDown(){
-		if(audio){
-			audio.Play();
+		if(GetComponent<AudioSource>()){
+			GetComponent<AudioSource>().Play();
 		}
 	}
 }

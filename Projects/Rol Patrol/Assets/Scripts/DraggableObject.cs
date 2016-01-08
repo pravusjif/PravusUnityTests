@@ -12,8 +12,8 @@ public class DraggableObject : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if(rigidbody2D && rigidbody2D.gravityScale > 0)
-			originalGravityScale = rigidbody2D.gravityScale;
+		if(GetComponent<Rigidbody2D>() && GetComponent<Rigidbody2D>().gravityScale > 0)
+			originalGravityScale = GetComponent<Rigidbody2D>().gravityScale;
 	}
 	
 	// Update is called once per frame
@@ -31,8 +31,8 @@ public class DraggableObject : MonoBehaviour {
 	}
 
 	protected virtual void OnMouseDown() {
-		if(rigidbody2D && rigidbody2D.gravityScale > 0)
-			rigidbody2D.gravityScale = 0;
+		if(GetComponent<Rigidbody2D>() && GetComponent<Rigidbody2D>().gravityScale > 0)
+			GetComponent<Rigidbody2D>().gravityScale = 0;
 
 		scanPos = gameObject.transform.position;
 		screenPoint = Camera.main.WorldToScreenPoint(scanPos);
@@ -63,7 +63,7 @@ public class DraggableObject : MonoBehaviour {
 	}
 
 	protected virtual void OnMouseUp(){
-		if(rigidbody2D)
-			rigidbody2D.gravityScale = originalGravityScale;
+		if(GetComponent<Rigidbody2D>())
+			GetComponent<Rigidbody2D>().gravityScale = originalGravityScale;
 	}
 }
